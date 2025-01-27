@@ -15,9 +15,7 @@ This process allowed me to not only hone the skills I learned in class, but also
 - **Smooth Scrolling**: Navigation between sections is seamless and user-friendly.
 
 ## **Technologies Used**
-- **HTML5**: For structuring content on the webpage.
-- **CSS3**: For styling and layout design.
-- **JavaScript**: For interactivity, such as smooth scrolling and navigation.
+HTML5, CSS3, and JavaScript.
 
 ## **What I Learned**
 This project was a significant learning experience for me. Some of the key takeaways include:
@@ -27,11 +25,6 @@ This project was a significant learning experience for me. Some of the key takea
 - The importance of iteration and refining projects to achieve a polished result.
 
 Beyond the technical skills, I discovered the satisfaction of taking charge of a project, venturing beyond my comfort zone, and realizing my ideas.
-
-## **Future Plans**
-This portfolio is just the beginning! I plan to:
-- Add more projects as I complete them.
-- Continuously improve the design and functionality based on feedback and inspiration.
 
 ## **How to View**
 To view the portfolio:
