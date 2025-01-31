@@ -1,0 +1,159 @@
+body, section, .sidebar, .content, #toggleButton {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar*/
+.sidebar {
+    
+    width: 35%; 
+    height: 100vh ; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    background-color: #0d1422; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 75px;
+}
+
+body.dark-mode .sidebar {
+    background-color: whitesmoke;
+}
+
+.intro {
+    text-align: left; 
+    padding-top: 45px;
+}
+
+
+/* Toggle Button */
+#toggleButton {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    border: none;
+    background: none;
+    font-size: 36px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.content {
+    width: 60%;
+    margin-left: 40%; 
+    padding: 45px 20px 45px 20px;
+}
+
+.resume {
+    padding-top: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Body */
+body {
+    background-color: #0d1422; 
+    color: #9ca3af; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+  }
+
+body.dark-mode {
+    background-color: whitesmoke;
+    color: #222325;
+}
+
+
+
+.active {
+    font-weight: bold;
+    color: whitesmoke !important;
+    transform: scale(1.2);
+
+  }
+
+
+/* Icons */
+
+.icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Spacing between icons */
+}
+
+.icon{
+    height: 30px;
+    max-width: 100%;
+    padding-bottom: 25px;
+    filter: invert(75%) brightness(70%);
+}
+
+body.dark-mode .icon {
+    filter: invert(25%) brightness(50%);
+}
+
+.icons a {
+    color: #9ca3af; 
+    font-size: 24px; 
+    margin: 0 5px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+
+  body.dark-mode .icons a {
+    color: #222325;
+}
+
+
+/* Nav Links */
+.nav-links{
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #9ca3af; 
+    padding: 10px; 
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+body.dark-mode .nav-links a {
+    color: #222325;
+}
+  
+  
+  
+  /* Hover */
+  .nav-links a:hover,
+  .icons a:hover {
+    color: whitesmoke; 
+    transform: scale(1.2);
+    text-shadow: 0 4px 8px #bcc4d309;
+   
+  }
+
+  body.dark-mode .nav-links a:hover,
+  body.dark-mode .icons a:hover {
+      color: #222325;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #toggleButton:hover {
+    transform: scale(1.2);
+    color: whitesmoke;
+}
+
