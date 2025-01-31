@@ -16,11 +16,12 @@ body, section, .sidebar, .content, #toggleButton {
     position: fixed; 
     left: 0;
     top: 0;
+    padding: 40px 30px;
     background-color: #0d1422; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 75px;
+    padding-left: 120px;
 }
 
 body.dark-mode .sidebar {
@@ -29,7 +30,43 @@ body.dark-mode .sidebar {
 
 .intro {
     text-align: left; 
-    padding-top: 45px;
+    padding-top: 25px;
+    padding-bottom: 0;
+}
+
+.intro h1 {
+    font-size: 3.3rem; 
+    font-weight: bold;
+    color: whitesmoke; 
+    margin-bottom: 0;
+}
+
+.intro h5 {
+    font-size: 1.3rem; 
+    color: whitesmoke;
+    margin-bottom: 10px; 
+    margin-top: 15px;
+}
+
+
+
+
+
+
+.intro p {
+    font-size: 1rem; 
+    color: #9ca3af;
+    max-width: 90%; 
+    margin-bottom: 0;
+}
+
+body.dark-mode .intro h1,
+body.dark-mode .intro h5{
+    color: #0d1422;
+}
+
+body.dark-mode .intro p{
+    color: #222325;
 }
 
 
@@ -47,17 +84,46 @@ body.dark-mode .sidebar {
 
 
 
+#about p {
+    margin-bottom: 20px; 
+}
+
 .content {
     width: 60%;
-    margin-left: 40%; 
+    margin-left: 45%; 
     padding: 45px 20px 45px 20px;
+    padding-right: 120px;
+}
+
+section {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 80px 0; 
+    text-align: left; 
+    line-height: 1.8; 
+    font-size: 1.3rem; 
+    letter-spacing: 0.3px; 
+}
+
+
+section p {
+    font-size: 1rem;
+    line-height: 1.8; 
+    max-width: 900px; 
 }
 
 .resume {
     padding-top: 25px;
     text-decoration: none;
-    color: black;
+    color: #9ca3af;
+
 }
+
+body.dark-mode .resume{
+    color: #222325;
+}
+
+
 
 
 /* Body */
@@ -83,13 +149,18 @@ body.dark-mode {
 
   }
 
+  body.dark-mode .active{
+    color: #222325 !important;
+  }
+
+
 
 /* Icons */
 
 .icons {
     display: flex;
-    justify-content: center; /* Center the icons */
-    gap: 10px; /* Spacing between icons */
+    gap: 10px; 
+    margin-bottom: 100px;
 }
 
 .icon{
@@ -120,7 +191,7 @@ body.dark-mode .icon {
     list-style: none;
     padding: 0;
     gap: 10px;
-    
+    margin-top: 0;
 }
 
 .nav-links a {
@@ -128,6 +199,7 @@ body.dark-mode .icon {
     color: #9ca3af; 
     padding: 10px; 
     display: inline-block;
+    font-size: large;
     transition: color 0.3s ease, background-color 0.3s ease;
   }
 
@@ -157,3 +229,45 @@ body.dark-mode .nav-links a {
     color: whitesmoke;
 }
 
+
+#experience{
+ padding-bottom: 95px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.resume{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.resume:hover {
+    color: white;
+}
+
+.progress-badge {
+    background-color: #dcb161; /* Orange color */
+    color: rgb(75, 72, 72);
+    font-size: 0.9rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.in-progress {
+    opacity: 0.7;
+}
